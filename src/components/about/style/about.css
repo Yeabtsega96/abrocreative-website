@@ -1,0 +1,339 @@
+/* ==========================================
+   ABOUT PAGE
+========================================== */
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-whiteoff);
+  color: var(--text-color);
+}
+
+/* ==========================================
+   ABOUT HERO
+========================================== */
+
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  padding: clamp(50px, 15vw, 80px) var(--container-padding);
+}
+
+.about-hero .title {
+  max-width: 900px;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.about-hero .headline {
+  max-width: 800px;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   STORY
+========================================== */
+
+.story {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+
+  align-items: center;
+
+  padding: var(--section-padding);
+}
+
+.story div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.story h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.story p {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  color: #666;
+  line-height: 1.9;
+}
+
+.story a {
+  align-self: flex-start;
+
+  background: var(--primary-color);
+  color: #fff;
+
+  padding: 14px 24px;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+
+  transition: .3s ease;
+}
+
+.story a:hover {
+  transform: translateY(-2px);
+}
+
+.story img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+
+  object-fit: cover;
+
+  border-radius: 24px;
+}
+
+/* ==========================================
+   MISSION / VISION / VALUES
+========================================== */
+
+.objective {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  padding: var(--section-padding);
+
+  background: #fff;
+}
+
+.objective .card {
+  background: var(--bg-whiteoff);
+
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 20px;
+
+  padding: 2rem;
+
+  text-align: center;
+
+  transition: .3s ease;
+}
+
+.objective .card:hover {
+  transform: translateY(-5px);
+}
+
+.objective .icon-span {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 1.5rem;
+
+  border-radius: 50%;
+
+  background: #ece5df;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mission-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--primary-color);
+}
+
+.vision-icon {
+  width: 36px;
+  height: 36px;
+  color: green;
+}
+
+.value-icon {
+  width: 36px;
+  height: 36px;
+  color: orange;
+}
+
+.objective h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.objective p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   WHAT MAKES US DIFFERENT
+========================================== */
+
+.importance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: var(--section-padding);
+}
+
+.importance .headline,
+.importance .sub-headline {
+  text-align: center;
+}
+
+.importance .cards {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.importance .card {
+  background: #fff;
+
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 20px;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  gap: 1.25rem;
+
+  transition: .3s ease;
+}
+
+.importance .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.05);
+}
+
+.importance .icon-span {
+  width: 72px;
+  height: 72px;
+
+  border-radius: 50%;
+
+  background: #ece5df;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.importance .icon {
+  width: 34px;
+  height: 34px;
+
+  color: var(--primary-color);
+}
+
+.importance h3 {
+  font-size: 1.4rem;
+}
+
+.importance p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   TRUST INDICATOR
+========================================== */
+
+.trust-indicator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 2rem;
+
+  padding: var(--section-padding);
+
+  background: #fff;
+}
+
+.trust-indicator div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.trust-indicator .number {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: bold;
+
+  color: var(--primary-color);
+}
+
+.trust-indicator .metric {
+  margin-top: .5rem;
+
+  font-size: clamp(1rem, 1.4vw, 1.3rem);
+
+  color: #666;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+  .story {
+    grid-template-columns: 1fr;
+  }
+
+  .objective {
+    grid-template-columns: 1fr;
+  }
+
+  .importance .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-indicator {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .importance .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-indicator {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .story {
+    gap: 2rem;
+  }
+
+  .story a {
+    width: 100%;
+    text-align: center;
+  }
+
+}

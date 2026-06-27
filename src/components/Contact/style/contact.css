@@ -1,0 +1,400 @@
+/* ==========================================
+   CONTACT PAGE
+========================================== */
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-whiteoff);
+  color: var(--text-color);
+}
+
+/* ==========================================
+   CONTACT HERO
+========================================== */
+
+.contact-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: clamp(60px, 14vw, 90px) clamp(20px, 6vw, 100px);
+  margin-top: 40px;
+}
+
+.contact-hero .title {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+}
+
+.contact-hero .sub-headline {
+  max-width: 980px;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   CONTACT GRID
+========================================== */
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+
+  padding: clamp(30px, 6vw, 100px);
+}
+
+/* ==========================================
+   CONTACT FORM
+========================================== */
+
+.contact-form-card {
+  background: #fff;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+
+  padding: clamp(24px, 4vw, 48px);
+}
+
+.contact-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form-card form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contact-form-card label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.contact-form-card label span {
+  color: #d32f2f;
+}
+
+.contact-form-card .optional {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.contact-form-card input,
+.contact-form-card select,
+.contact-form-card textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+
+  background: #fff;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.contact-form-card input:focus,
+.contact-form-card select:focus,
+.contact-form-card textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.contact-form-card textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+
+.send-message-btn {
+  margin-top: 0.5rem;
+
+  align-self: flex-start;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  background: var(--primary-color);
+  color: #fff;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 15px 26px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.send-message-btn:hover {
+  transform: translateY(-2px);
+}
+
+.send-icon {
+  width: 18px;
+  height: 18px;
+}
+
+
+
+/* ==========================================
+   CONTACT INFO SECTION
+========================================== */
+
+.contact-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Main Contact Card */
+
+.contact-info {
+  background: #fff;
+  color: var(--primary-color);
+
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.contact-info h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.contact-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-info li span {
+  margin-top: 8px;
+
+  border-radius: 30%;
+  background: #f0eeea;
+
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  padding: 12px;
+}
+
+.contact-info li span .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-info .info-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.35rem;
+}
+
+.contact-info .info {
+  color: gray;
+  line-height: 1.7;
+}
+
+/* Small Info Cards */
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-card {
+  padding: 1.75rem;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+}
+
+/* First card - Brand Brown */
+
+.info-card:first-child {
+  background: var(--primary-color);
+}
+
+/* Second card - Professional Green */
+
+.info-card:last-child {
+  background: #2E7D32; /* same as your --secondory-color */
+}
+
+.info-card h4 {
+  font-size: 1.35rem;
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.info-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+.process-cards {
+  display: flex;
+  align-items: center;
+}
+/* Mobile */
+
+@media (max-width: 768px) {
+  .contact-info-cards {
+    width: 100%;
+  }
+
+  .contact-info,
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.75rem;
+  }
+}
+
+/* ==========================================
+   PROCESS
+========================================== */
+
+.contact-process {
+  padding: clamp(40px, 6vw, 100px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-process h2 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact-process-cards {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+.contact-process-card {
+  background: #fff;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+
+  padding: 2rem;
+
+  text-align: center;
+
+  transition: 0.3s ease;
+}
+
+.contact-process-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact-process-card .number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background: var(--bg-whiteoff);
+
+  color: var(--primary-color);
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  margin-bottom: 1.5rem;
+}
+
+.contact-process-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.contact-process-card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-process-cards {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .contact-cards {
+    padding: 30px 20px;
+  }
+
+  .contact-process {
+    padding: 30px 20px;
+  }
+
+  .send-message-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+}
