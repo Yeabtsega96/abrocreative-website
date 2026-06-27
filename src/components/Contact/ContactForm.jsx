@@ -58,7 +58,7 @@ const ContactForm = () => {
     <div className="contact-form-card">
       <form onSubmit={handleSubmit}>
 
-        <div>cc
+        <div>
           <label htmlFor="name">Full Name <span>*</span></label>
           <input
             id="name"
